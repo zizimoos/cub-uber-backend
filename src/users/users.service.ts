@@ -71,7 +71,7 @@ export class UsersService {
     }
   }
 
-  findById(id: number): Promise<User> {
+  async findById(id: number): Promise<User> {
     return this.users.findOne({ id });
   }
 }
