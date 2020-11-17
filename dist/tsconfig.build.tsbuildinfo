@@ -5785,9 +5785,14 @@
         "signature": "f82579de3ed3aa77ea4af5390c4100a5665f3e0bacc7f327f47173e9e87a0f55",
         "affectsGlobalScope": false
       },
+      "../node_modules/@types/jsonwebtoken/index.d.ts": {
+        "version": "f67c920eba6ab8e4558cb9ab661d900188f101c5657e19b1e15829a1d491d46e",
+        "signature": "f67c920eba6ab8e4558cb9ab661d900188f101c5657e19b1e15829a1d491d46e",
+        "affectsGlobalScope": false
+      },
       "../src/users/users.service.ts": {
-        "version": "4e070af9cc5bf695a93d7a3962b7a690f3c2501fdcb8e13ce75a5b7c456f1763",
-        "signature": "abc58772fff4b97adc65e4a1804fd037b4c2f0bf5762e9e452bc1744ae5e3291",
+        "version": "294f5473f1cd26624f5f4e7d22252937998c8dd99d940415afbfc7a2d0d26c44",
+        "signature": "bdc9701928498911b9e5a1b18d7cd8715e34dd3833a6c34e2159638784a6e4a7",
         "affectsGlobalScope": false
       },
       "../src/users/users.resolver.ts": {
@@ -5796,7 +5801,7 @@
         "affectsGlobalScope": false
       },
       "../src/users/users.module.ts": {
-        "version": "0781df7af03d8876a5cff1b02be5f2b115d66bfa2a39cb57e5330bfdf70212bb",
+        "version": "41dd23030664e5d7d59cd0484e3101ec1a1611d7183c27133aa8c70965465575",
         "signature": "aa1725e38b5a0b4009f6a74f296f173e7926c119a60454dbd2e523861735df69",
         "affectsGlobalScope": false
       },
@@ -5806,12 +5811,12 @@
         "affectsGlobalScope": false
       },
       "../src/app.module.ts": {
-        "version": "7fb1819fdeacf120b39b61eb33680c44a0c1bdaa29af6cf728411db4b0121d80",
+        "version": "58ab059ceb97229c38027ab2101a36b25e44e1ca0c918b36b3180b26ee93d8cd",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
-        "version": "d35475e276eef36759f93d235aa46a1e12f6d50cc75a2243fe70cd95a24ac5ad",
+        "version": "c8a6b066a247042ac853ab45f23dc3c704d344d65f93b1562c5e53ee3fd7369c",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -7708,6 +7713,9 @@
       ],
       "../node_modules/@types/jest/ts3.2/index.d.ts": [
         "../node_modules/@types/jest/index.d.ts"
+      ],
+      "../node_modules/@types/jsonwebtoken/index.d.ts": [
+        "../node_modules/@types/node/index.d.ts"
       ],
       "../node_modules/@types/koa-compose/index.d.ts": [
         "../node_modules/@types/koa/index.d.ts"
@@ -10989,6 +10997,7 @@
       ],
       "../src/users/users.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/config/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/users/entities/user.entity.ts",
         "../src/users/users.resolver.ts",
@@ -11003,7 +11012,9 @@
       ],
       "../src/users/users.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/config/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/@types/jsonwebtoken/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
         "../src/users/dtos/create-account.dto.ts",
         "../src/users/dtos/login.dto.ts",
@@ -12585,6 +12596,9 @@
       ],
       "../node_modules/@types/jest/ts3.2/index.d.ts": [
         "../node_modules/@types/jest/index.d.ts"
+      ],
+      "../node_modules/@types/jsonwebtoken/index.d.ts": [
+        "../node_modules/@types/node/index.d.ts"
       ],
       "../node_modules/@types/koa-compose/index.d.ts": [
         "../node_modules/@types/koa/index.d.ts"
@@ -15823,6 +15837,7 @@
         "../src/users/users.service.ts"
       ],
       "../src/users/users.service.ts": [
+        "../node_modules/@nestjs/config/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
         "../src/users/dtos/create-account.dto.ts",
         "../src/users/dtos/login.dto.ts",
@@ -16230,6 +16245,7 @@
       "../node_modules/@types/jest/ts3.2/index.d.ts",
       "../node_modules/@types/json-schema/index.d.ts",
       "../node_modules/@types/json5/index.d.ts",
+      "../node_modules/@types/jsonwebtoken/index.d.ts",
       "../node_modules/@types/keygrip/index.d.ts",
       "../node_modules/@types/koa-compose/index.d.ts",
       "../node_modules/@types/koa/index.d.ts",

@@ -4,12 +4,17 @@ import { Repository } from 'typeorm';
 import { CreateAccountInput } from './dtos/create-account.dto';
 import { LoginInput } from './dtos/login.dto';
 import { User } from './entities/user.entity';
+import * as jwt from 'jsonwebtoken';
+import { ConfigService } from '@nestjs/config';
 
 @Injectable()
 export class UsersService {
   constructor(
     @InjectRepository(User) private readonly users: Repository<User>,
-  ) {}
+    private readonly config: ConfigService,
+  ) {
+    console.log(this.config.get('SECRET_KEY'));
+  }
 
   async createAccount({
     email,
@@ -39,28 +44,29 @@ export class UsersService {
     email,
     password,
   }: LoginInput): Promise<{ ok: boolean; error?: string; token?: string }> {
-    // find the user with emai
-    const user = await this.users.findOne({ email });
-    if (!user) {
-      return {
-        ok: false,
-        error: `User  not found`,
-      };
-    }
-    // check of the password is correct
-    const passwordCorrect = await user.checkPassword(password);
-    if (!passwordCorrect) {
-      return {
-        ok: false,
-        error: 'wrong password',
-      };
-    }
-    return {
-      ok: true,
-      token: 'tokentoken',
-    };
-    // make a JWT and give it to the user
     try {
+      // find the user with emai
+      const user = await this.users.findOne({ email });
+      if (!user) {
+        return {
+          ok: false,
+          error: `User  not found`,
+        };
+      }
+      // check of the password is correct
+      const passwordCorrect = await user.checkPassword(password);
+      if (!passwordCorrect) {
+        return {
+          ok: false,
+          error: 'wrong password',
+        };
+      }
+      const token = jwt.sign({ id: user.id }, this.config.get('SECRET_KEY'));
+      return {
+        ok: true,
+        token,
+      };
+      // make a JWT and give it to the user
     } catch (e) {
       return { ok: false, error: e };
     }
