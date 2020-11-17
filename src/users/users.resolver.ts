@@ -46,4 +46,6 @@ export class UsersResolver {
       };
     }
   }
+  @Query(() => User)
+  me() {}
 }
