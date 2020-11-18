@@ -5836,12 +5836,12 @@
         "affectsGlobalScope": false
       },
       "../src/users/users.service.ts": {
-        "version": "a5d867b3191640b8073f3e32f8f52ad80091f00eeab539278329790b81a5d650",
-        "signature": "3940b9adbf31ee6c3c458820c5f1f912bc1800b1fa74ef5f35a6175c32bfc60d",
+        "version": "3b04488d7f7c0b9cce1460e77de8058ea885369ca0b3b26e1f0c2194d9ead465",
+        "signature": "ed99b3b4dbe7f4a5b2ef810698c3467db45cd15161572d84f5240ac4f7fc1171",
         "affectsGlobalScope": false
       },
       "../src/users/users.resolver.ts": {
-        "version": "af1cd810c4c01dd1b09a7da6b8671ae36cb78cfec7139ce6313cd0d21d9e3c97",
+        "version": "1b51c73b14fab76f5afa24b0d4b2281ee6b8007c531d2ad4d827bf181ce04aff",
         "signature": "c5accf08455d945d099711808a60ea14edd5b07acd9dc2b901d59272ab7f6c14",
         "affectsGlobalScope": false
       },
