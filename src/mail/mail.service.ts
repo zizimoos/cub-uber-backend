@@ -9,14 +9,16 @@ export class MailService {
   constructor(
     @Inject(CONFIG_OPTIONS) private readonly options: MailModuleOptions,
   ) {
-    this.sendEmail('testing', 'test');
+    this.sendEmail('testing');
   }
-  private async sendEmail(subject: string, content: string) {
+  private async sendEmail(subject: string) {
     const form = new FormData();
     form.append('from', `Excited User <mailgun@${this.options.domain}>`);
     form.append('to', `fingersoftgame@gmail.com`);
     form.append('subject', subject);
     form.append('template', 'verify-email');
+    form.append('v:code', 'dr3023j');
+    form.append('v:username', 'azerc');
     console.log(form);
     const response = await got(
       `https://api.mailgun.net/v3/${this.options.domain}/messages`,
