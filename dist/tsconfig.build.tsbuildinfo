@@ -5835,36 +5835,6 @@
         "signature": "28db6ca46dea1929f292a9b3765d6e2fcd3eabc8245ef5b93268ce10f215393f",
         "affectsGlobalScope": false
       },
-      "../src/users/users.service.ts": {
-        "version": "c37aeeaab071bcc70b8ef299b40001323e8dafabf61cbed8e24af7f496116675",
-        "signature": "ed99b3b4dbe7f4a5b2ef810698c3467db45cd15161572d84f5240ac4f7fc1171",
-        "affectsGlobalScope": false
-      },
-      "../src/users/users.resolver.ts": {
-        "version": "1b51c73b14fab76f5afa24b0d4b2281ee6b8007c531d2ad4d827bf181ce04aff",
-        "signature": "c5accf08455d945d099711808a60ea14edd5b07acd9dc2b901d59272ab7f6c14",
-        "affectsGlobalScope": false
-      },
-      "../src/users/users.module.ts": {
-        "version": "af9e7e345275e1f41bcda20bb12b03c213da17ccd301c04a14d549b809451628",
-        "signature": "aa1725e38b5a0b4009f6a74f296f173e7926c119a60454dbd2e523861735df69",
-        "affectsGlobalScope": false
-      },
-      "../src/jwt/jwt.module.ts": {
-        "version": "50f84fe9f50759aeda9b204ae5dd5984bd60406ef02d9c5f859dd7c1bb5ed467",
-        "signature": "d157d193c7316bb6837a8e379f3d2c8c46553b613cebc59767c209782af48262",
-        "affectsGlobalScope": false
-      },
-      "../src/jwt/jwt.middleware.ts": {
-        "version": "41f5705dbbf6d7799990926fe598d437b81f19c50bef1401f21d968e25b60138",
-        "signature": "c7828a75920e7e3593aa9797f82efa24c7d876955cd16426c2a19fc16f17c597",
-        "affectsGlobalScope": false
-      },
-      "../src/mail/mail.interfaces.ts": {
-        "version": "38b136557565d9f0c4fd2a8344f5e48ea18ec4bb7a386bdd85d7ce594ace5df4",
-        "signature": "a82ffa92a07884634fbb12792e9b71690b48ec938ab77f41533a4ddadc7276fa",
-        "affectsGlobalScope": false
-      },
       "../node_modules/p-cancelable/index.d.ts": {
         "version": "3563ec7b709c5adf97e8467fc1d0d117aac33ce90a8e7db61dcc9aa10a9f2fb6",
         "signature": "3563ec7b709c5adf97e8467fc1d0d117aac33ce90a8e7db61dcc9aa10a9f2fb6",
@@ -5950,13 +5920,43 @@
         "signature": "cbb7029e32a6a72178cda8baa9129b1ee6d1d779a35e46c780e38b4909d42a89",
         "affectsGlobalScope": false
       },
+      "../src/mail/mail.interfaces.ts": {
+        "version": "f89b56028b7415bb2cd4fd5850ed148b19f23ed80e00613a1ac78405faa291a1",
+        "signature": "d6a3743e38c6884cd0a1478d6df760bd5a1229b0e34ca9172f648438faa85e90",
+        "affectsGlobalScope": false
+      },
       "../src/mail/mail.service.ts": {
-        "version": "36aeda45993c37a6888e83287a0cc93d16ce703266d8eafaf54ac75774d9a067",
-        "signature": "21d389f073148e3b594a4f5ec70aec4fbffc0b04f9fd0b12452ecb6c0534b02b",
+        "version": "8051fd3f3279bcda5038497ce050efd642c32673559acb0d8fc06b3b868f1b11",
+        "signature": "e93faffccc88b40324fb26fd60ebe9a80368c4a9a58207cbd7ab841423b5f81c",
+        "affectsGlobalScope": false
+      },
+      "../src/users/users.service.ts": {
+        "version": "7ffae468cbb64e421e8eb8705641e392856c9be814668860b80c4b58897a4cc8",
+        "signature": "afaeb1604bc099dee019ee7c0935171bd09b768531747f2a93aca5456a42041b",
+        "affectsGlobalScope": false
+      },
+      "../src/users/users.resolver.ts": {
+        "version": "1b51c73b14fab76f5afa24b0d4b2281ee6b8007c531d2ad4d827bf181ce04aff",
+        "signature": "c5accf08455d945d099711808a60ea14edd5b07acd9dc2b901d59272ab7f6c14",
+        "affectsGlobalScope": false
+      },
+      "../src/users/users.module.ts": {
+        "version": "af9e7e345275e1f41bcda20bb12b03c213da17ccd301c04a14d549b809451628",
+        "signature": "aa1725e38b5a0b4009f6a74f296f173e7926c119a60454dbd2e523861735df69",
+        "affectsGlobalScope": false
+      },
+      "../src/jwt/jwt.module.ts": {
+        "version": "50f84fe9f50759aeda9b204ae5dd5984bd60406ef02d9c5f859dd7c1bb5ed467",
+        "signature": "d157d193c7316bb6837a8e379f3d2c8c46553b613cebc59767c209782af48262",
+        "affectsGlobalScope": false
+      },
+      "../src/jwt/jwt.middleware.ts": {
+        "version": "41f5705dbbf6d7799990926fe598d437b81f19c50bef1401f21d968e25b60138",
+        "signature": "c7828a75920e7e3593aa9797f82efa24c7d876955cd16426c2a19fc16f17c597",
         "affectsGlobalScope": false
       },
       "../src/mail/mail.module.ts": {
-        "version": "c918e6602a669dd3ad96b9ab0411442c9275db6cb45676126d656a836e2edb41",
+        "version": "7e3fcee5200fba58e91d6dcc69a42a1d8f4d6c38d4b96ea8146fe8686465a8fe",
         "signature": "736681ad77fedd86ada50f3f17b5349a68b343baae331b29c8c41cc140818aad",
         "affectsGlobalScope": false
       },
@@ -11324,6 +11324,7 @@
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
         "../src/jwt/jwt.service.ts",
+        "../src/mail/mail.service.ts",
         "../src/users/dtos/create-account.dto.ts",
         "../src/users/dtos/edit-profile.dto.ts",
         "../src/users/dtos/login.dto.ts",
@@ -16275,6 +16276,7 @@
       "../src/users/users.service.ts": [
         "../node_modules/typeorm/index.d.ts",
         "../src/jwt/jwt.service.ts",
+        "../src/mail/mail.service.ts",
         "../src/users/dtos/create-account.dto.ts",
         "../src/users/dtos/edit-profile.dto.ts",
         "../src/users/dtos/login.dto.ts",
