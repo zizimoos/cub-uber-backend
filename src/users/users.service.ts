@@ -31,6 +31,7 @@ export class UsersService {
     try {
       // check new user
       const exist = await this.users.findOne({ email });
+      console.log(exist);
       if (exist) {
         // make error message
         return {
