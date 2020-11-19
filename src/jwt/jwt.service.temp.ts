@@ -11,7 +11,7 @@ describe('JwtService', () => {
 
     service = module.get<JwtService>(JwtService);
   });
-
+  console.log(service);
   it('should be defined', () => {
     expect(service).toBeDefined();
   });
