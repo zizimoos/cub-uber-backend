@@ -5831,8 +5831,8 @@
         "affectsGlobalScope": false
       },
       "../src/jwt/jwt.service.ts": {
-        "version": "0b5f574c7f874ad520b816587f6db8853317899a83287d5190a2c551942bd65a",
-        "signature": "28db6ca46dea1929f292a9b3765d6e2fcd3eabc8245ef5b93268ce10f215393f",
+        "version": "8f501d68232afcced8be38b429f5b9f5aa34950efc813d537499558465414450",
+        "signature": "932e647645a613c4cf176354c9ac8fd477a8fcf9bab62d081711dfd34ffffdc8",
         "affectsGlobalScope": false
       },
       "../node_modules/p-cancelable/index.d.ts": {
@@ -5926,17 +5926,17 @@
         "affectsGlobalScope": false
       },
       "../src/mail/mail.service.ts": {
-        "version": "8051fd3f3279bcda5038497ce050efd642c32673559acb0d8fc06b3b868f1b11",
-        "signature": "e93faffccc88b40324fb26fd60ebe9a80368c4a9a58207cbd7ab841423b5f81c",
+        "version": "a57d9df3a2e5672b8252b682ed55188ca124a337c148287e06ca30b0b8200cf9",
+        "signature": "b5fecc7b412f9b4053e572b5a907d87f3bff98ff40e857311fe354d05cafb8ef",
         "affectsGlobalScope": false
       },
       "../src/users/users.service.ts": {
-        "version": "7ffae468cbb64e421e8eb8705641e392856c9be814668860b80c4b58897a4cc8",
-        "signature": "afaeb1604bc099dee019ee7c0935171bd09b768531747f2a93aca5456a42041b",
+        "version": "07ad8577b06a57e591e95029092928c9648005e3453cb2825153be87cf55d0f7",
+        "signature": "0b8e1cd464bea62744087e878ab3ae0bf04ed5e114e563d309aa53b6bf3d375c",
         "affectsGlobalScope": false
       },
       "../src/users/users.resolver.ts": {
-        "version": "1b51c73b14fab76f5afa24b0d4b2281ee6b8007c531d2ad4d827bf181ce04aff",
+        "version": "0201f81418a9b5cac68d8a5f99bd20d1337daef0f345d1b903e542ba956f9f65",
         "signature": "c5accf08455d945d099711808a60ea14edd5b07acd9dc2b901d59272ab7f6c14",
         "affectsGlobalScope": false
       },
@@ -11328,6 +11328,7 @@
         "../src/users/dtos/create-account.dto.ts",
         "../src/users/dtos/edit-profile.dto.ts",
         "../src/users/dtos/login.dto.ts",
+        "../src/users/dtos/user-profile.dto.ts",
         "../src/users/dtos/verify-email.dto.ts",
         "../src/users/entities/user.entity.ts",
         "../src/users/entities/verification.entity.ts"
@@ -16280,6 +16281,7 @@
         "../src/users/dtos/create-account.dto.ts",
         "../src/users/dtos/edit-profile.dto.ts",
         "../src/users/dtos/login.dto.ts",
+        "../src/users/dtos/user-profile.dto.ts",
         "../src/users/dtos/verify-email.dto.ts",
         "../src/users/entities/user.entity.ts",
         "../src/users/entities/verification.entity.ts"
