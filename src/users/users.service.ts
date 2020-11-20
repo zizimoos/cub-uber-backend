@@ -10,6 +10,7 @@ import { EditProfileInput, EditProfileOutput } from './dtos/edit-profile.dto';
 import { Verification } from './entities/verification.entity';
 import { VerifyEmailOutput } from './dtos/verify-email.dto';
 import { MailService } from 'src/mail/mail.service';
+import { UserProfileOutput } from './dtos/user-profile.dto';
 
 @Injectable()
 export class UsersService {
@@ -87,13 +88,21 @@ export class UsersService {
         token,
       };
       // make a JWT and give it to the user
-    } catch (e) {
-      return { ok: false, error: e };
+    } catch (error) {
+      return { ok: false, error: 'login error' };
     }
   }
 
-  async findById(id: number): Promise<User> {
-    return this.users.findOne({ id });
+  async findById(id: number): Promise<UserProfileOutput> {
+    try {
+      const user = await this.users.findOneOrFail({ id });
+      return {
+        ok: true,
+        ...user,
+      };
+    } catch (error) {
+      return { ok: false, error: 'User not Found' };
+    }
   }
 
   async editProfile(
@@ -110,19 +119,22 @@ export class UsersService {
             user,
           }),
         );
-        this.mailService.sendVerificationEmail(user.email, verification.code);
+        await this.mailService.sendVerificationEmail(
+          user.email,
+          verification.code,
+        );
       }
       if (password) {
         user.password = password;
       }
-      this.users.save(user);
+      await this.users.save(user);
       return {
         ok: true,
       };
     } catch (error) {
       return {
         ok: false,
-        error,
+        error: 'Could not update profile',
       };
     }
   }
@@ -141,7 +153,7 @@ export class UsersService {
       }
       return { ok: false, error: 'Verification not found.' };
     } catch (error) {
-      return { ok: false, error };
+      return { ok: false, error: 'Could not verify email' };
     }
   }
 }

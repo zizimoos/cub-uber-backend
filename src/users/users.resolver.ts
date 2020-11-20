@@ -70,10 +70,10 @@ export class UsersResolver {
       }
       return {
         ok: true,
-        user,
+        ...user,
       };
-    } catch (e) {
-      return { error: 'User not found', ok: false };
+    } catch (error) {
+      return { error, ok: false };
     }
   }
 
