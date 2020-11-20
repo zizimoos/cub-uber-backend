@@ -146,7 +146,7 @@ describe('UserService', () => {
       console.log(result);
       expect(result).toEqual({ ok: true, token: 'signed token honey' });
       expect(jwtService.sign).toHaveBeenCalledTimes(1);
-      expect(jwtService.sign).toHaveBeenCalledWith(expect.any(Object));
+      expect(jwtService.sign).toHaveBeenCalledWith(mockedUser.id);
     });
     it('should fail on exception', async () => {
       usersRepository.findOne.mockRejectedValue(new Error());

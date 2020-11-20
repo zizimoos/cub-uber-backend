@@ -11,11 +11,13 @@ export class MailService {
   ) {
     // this.sendEmail('testing', 'verify-email');
   }
-  private async sendEmail(
+  async sendEmail(
     subject: string,
     template: string,
     emailVars: EmailVar[],
-  ) {
+  ): Promise<boolean> {
+    // console.log(got);
+    // console.log(FormData);
     const form = new FormData();
     form.append('from', `Azerc from cub-uber <mailgun@${this.options.domain}>`);
     form.append('to', `fingersoftgame@gmail.com`);
@@ -25,17 +27,20 @@ export class MailService {
     // form.append('v:code', 'dr3023j');
     // form.append('v:username', 'azerc');
     try {
-      await got(`https://api.mailgun.net/v3/${this.options.domain}/messages`, {
-        method: 'POST',
-        headers: {
-          Authorization: `Basic ${Buffer.from(
-            `api:${this.options.apiKey}`,
-          ).toString('base64')}`,
+      await got.post(
+        `https://api.mailgun.net/v3/${this.options.domain}/messages`,
+        {
+          headers: {
+            Authorization: `Basic ${Buffer.from(
+              `api:${this.options.apiKey}`,
+            ).toString('base64')}`,
+          },
+          body: form,
         },
-        body: form,
-      });
+      );
+      return true;
     } catch (e) {
-      console.log(e);
+      return false;
     }
   }
   sendVerificationEmail(email: string, code: string) {
