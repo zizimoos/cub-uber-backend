@@ -65,6 +65,7 @@ export class UsersResolver {
   ): Promise<UserProfileOutput> {
     try {
       const user = await this.usersService.findById(userProfileInput.userId);
+
       if (!user) {
         throw Error();
       }

@@ -98,7 +98,7 @@ export class UsersService {
       const user = await this.users.findOneOrFail({ id });
       return {
         ok: true,
-        ...user,
+        user,
       };
     } catch (error) {
       return { ok: false, error: 'User not Found' };
@@ -111,9 +111,11 @@ export class UsersService {
   ): Promise<EditProfileOutput> {
     try {
       const user = await this.users.findOne(userId);
+      // todo : email 중복 된 것이 있으면, error message
       if (email) {
         user.email = email;
         user.verified = false;
+        await this.verifications.delete({ user: { id: user.id } });
         const verification = await this.verifications.save(
           this.verifications.create({
             user,

@@ -164,7 +164,7 @@ describe('UserService', () => {
       usersRepository.findOneOrFail.mockResolvedValue(findByIdArgs);
       const result = await service.findById(1);
       console.log(result);
-      expect(result).toEqual({ ok: true, id: 1 });
+      expect(result).toEqual({ ok: true, user: { id: 1 } });
     });
     it(`should fail if no user if found`, async () => {
       usersRepository.findOneOrFail.mockRejectedValue(new Error());
