@@ -5740,38 +5740,43 @@
         "signature": "f09e08270813b9c70f365c94e88b2b8392cba2fac9b3474b2fb1bb79d6f3871c",
         "affectsGlobalScope": false
       },
-      "../src/restaurants/entities/category.entity.ts": {
-        "version": "12ec7ca7ad623e887bf89a51fa63e98eefb214a9bbf66717d3e31f2db200c947",
-        "signature": "80e75cf4b7baf7f7721218e901cddf0d29d41bdc7e69255c6e92accb72f22b00",
-        "affectsGlobalScope": false
-      },
       "../src/restaurants/entities/restaurant.entity.ts": {
         "version": "9280c646003937336dc2b3ce3143fe53c6f222a3c48e2f0436c765747c1cfbbb",
         "signature": "2e1681c18b8b9a6539e709323b757c1cdd8982aff7ceb1e756281412b9bb49bf",
         "affectsGlobalScope": false
       },
-      "../src/restaurants/dtos/create-restaurant.dto.ts": {
-        "version": "956c3cbb1ff96cc306d7be5f94bcf0b22b5a78dc207024ad95d17a0556341e44",
-        "signature": "44997e56053454d04ddd61bbf7f3ab9a909121800febb422eaad63d5c06b498b",
+      "../src/restaurants/entities/category.entity.ts": {
+        "version": "05bcecd0fb5889949c5f72982fa13d90c1ddf8b1125ea97ec8655d3f5b197ae9",
+        "signature": "66fe0293f123122c1de70e021a96de51fba44b4eff50975dd0b76b368898f592",
         "affectsGlobalScope": false
       },
-      "../src/restaurants/dtos/updat-restaurant.dto.ts": {
-        "version": "894de568a421fa48a94d6568b530b30d7e7810a1ae3f31edaabc77704d793651",
-        "signature": "30f125d48197ca6fb702271de6d97fe50df167864b5fb4d3194c3923c3b2165b",
+      "../src/common/dtos/output.dto.ts": {
+        "version": "c1f6250b3ca956e4c8b5df18d8f1de99af02488900ed3571662825f38eea646b",
+        "signature": "83b62ec1a108b77c82bbf7b83813c6582be6819aabd8de9b821563f7d91e3fbb",
+        "affectsGlobalScope": false
+      },
+      "../src/restaurants/dtos/create-restaurant.dto.ts": {
+        "version": "3e22842db7a144f36b8a3762c5198d1e9098856781782ef177253161ada2000d",
+        "signature": "5949513bed57ddeef619d6538b1403eeaca1bead8cc4e78b3b34f551bb35ec01",
         "affectsGlobalScope": false
       },
       "../src/restaurants/restaurant.service.ts": {
-        "version": "9da7fcd7c855d305b27c5dec84ca6750157847f1bd1a8cf732cacaf91219a4ef",
-        "signature": "0453f4a56048c22171b0794d31738b675a3abace445501f26097ae2a3420274c",
+        "version": "9a19ba2a41ebe309c9aaf359db6bed2afbc4eec12ff067c4064378fca489f6d2",
+        "signature": "2040b767c5b4e542de01367bfb41ce415091cba555c557bc00a75bc63ecf9110",
+        "affectsGlobalScope": false
+      },
+      "../src/auth/auth-user.decorator.ts": {
+        "version": "211f60fd5ebe9e8a259f1258f1d6c9520ccab64c065c5883a511c14ae5a7e5da",
+        "signature": "cd1e457df3b82a86ca479fcda6e01c8ff3874ebdbdc812db7f6734d8561f4788",
         "affectsGlobalScope": false
       },
       "../src/restaurants/restaurants.resolver.ts": {
-        "version": "60751799cd19ce99e4d65dd07e1803fe926566a14b920c5159f8ed45b821b649",
-        "signature": "e627eb9a9fdd6dc77d6e98eac574600106ba3edac83874ef91732357cca05db6",
+        "version": "b3035d064c5e9dacfe09090a77432562135717d59a500bf2dccb72c1dba33c6c",
+        "signature": "4ab5ce9e403f616851cad930c91d556f0cea9ef3d28cb1320146eade7bebc5bf",
         "affectsGlobalScope": false
       },
       "../src/restaurants/restaurants.module.ts": {
-        "version": "9fe9673e099680d8148ede928b42cc2a39d1d2dc0c0982266ba7412cf0b2a9f0",
+        "version": "af9a868cce12f6373fdee727992de51b1bb1d3db08b69942a0bd274e08cd71bb",
         "signature": "126108b45b72bbade3b5733fa6e1dbc34c5b76e6615d9ed0ba1c24ea9275fb35",
         "affectsGlobalScope": false
       },
@@ -5780,34 +5785,24 @@
         "signature": "da6f79977d480f1bb7713ea507c829741779e6452a491ace8e0a474263d3f2a8",
         "affectsGlobalScope": false
       },
-      "../src/auth/auth-user.decorator.ts": {
-        "version": "211f60fd5ebe9e8a259f1258f1d6c9520ccab64c065c5883a511c14ae5a7e5da",
-        "signature": "cd1e457df3b82a86ca479fcda6e01c8ff3874ebdbdc812db7f6734d8561f4788",
-        "affectsGlobalScope": false
-      },
       "../src/auth/auth.guard.ts": {
         "version": "a1285db990c4a2cc10e92c736807411f45a403489a0183675e73dfd2069bbaef",
         "signature": "89cbe528206d39a629cf5e072460519f1305bf844df942749e376a24a983d0dd",
         "affectsGlobalScope": false
       },
-      "../src/common/dtos/output.dto.ts": {
-        "version": "c1f6250b3ca956e4c8b5df18d8f1de99af02488900ed3571662825f38eea646b",
-        "signature": "83b62ec1a108b77c82bbf7b83813c6582be6819aabd8de9b821563f7d91e3fbb",
-        "affectsGlobalScope": false
-      },
       "../src/users/dtos/create-account.dto.ts": {
         "version": "4c69b4bab4023b4673713db09dbe971d7ca9b26a5fbf3f5479ed16100a51de78",
-        "signature": "060f0eaa54b6e80ba3b2d447006d6af8663407ddd0d77bebae8e7e2509aec31c",
+        "signature": "6f89af8315bc8a1796824e01384c21258f931e884cc8fa2f30a9bc114a9e2dc2",
         "affectsGlobalScope": false
       },
       "../src/users/dtos/edit-profile.dto.ts": {
         "version": "0bf48e5effb2e465ce3f96374a488fac6e08f7451cc8dc65873a5630c72b9f0a",
-        "signature": "919b776d0eed9a1679a8e0f45d153653f7dc508b43b7e22ad9dcc21116451673",
+        "signature": "00f83fc8235e33b64b17bb8d534ba25f7cec7ace0a78b87b076e177b83c804d7",
         "affectsGlobalScope": false
       },
       "../src/users/dtos/login.dto.ts": {
         "version": "3418a3769532ef37b3ed41dae6afebe215d973353b356a5df8354443084853d0",
-        "signature": "9d4cec298464637e1cc814ae54d1ed526e200520cee40626ed6a221bbf083612",
+        "signature": "fc03bf60d8e63dc4b50adf06b034b6ea7f94fa188525de722c7bdf59b57c775f",
         "affectsGlobalScope": false
       },
       "../src/users/dtos/user-profile.dto.ts": {
@@ -11232,11 +11227,8 @@
       ],
       "../src/restaurants/dtos/create-restaurant.dto.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
+        "../src/common/dtos/output.dto.ts",
         "../src/restaurants/entities/restaurant.entity.ts"
-      ],
-      "../src/restaurants/dtos/updat-restaurant.dto.ts": [
-        "../node_modules/@nestjs/graphql/index.d.ts",
-        "../src/restaurants/dtos/create-restaurant.dto.ts"
       ],
       "../src/restaurants/entities/category.entity.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
@@ -11258,22 +11250,25 @@
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
         "../src/restaurants/dtos/create-restaurant.dto.ts",
-        "../src/restaurants/dtos/updat-restaurant.dto.ts",
-        "../src/restaurants/entities/restaurant.entity.ts"
+        "../src/restaurants/entities/category.entity.ts",
+        "../src/restaurants/entities/restaurant.entity.ts",
+        "../src/users/entities/user.entity.ts"
       ],
       "../src/restaurants/restaurants.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/restaurants/entities/category.entity.ts",
         "../src/restaurants/entities/restaurant.entity.ts",
         "../src/restaurants/restaurant.service.ts",
         "../src/restaurants/restaurants.resolver.ts"
       ],
       "../src/restaurants/restaurants.resolver.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
+        "../src/auth/auth-user.decorator.ts",
         "../src/restaurants/dtos/create-restaurant.dto.ts",
-        "../src/restaurants/dtos/updat-restaurant.dto.ts",
         "../src/restaurants/entities/restaurant.entity.ts",
-        "../src/restaurants/restaurant.service.ts"
+        "../src/restaurants/restaurant.service.ts",
+        "../src/users/entities/user.entity.ts"
       ],
       "../src/users/dtos/create-account.dto.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
@@ -16233,11 +16228,8 @@
       ],
       "../src/restaurants/dtos/create-restaurant.dto.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../src/common/dtos/output.dto.ts",
         "../src/restaurants/entities/restaurant.entity.ts"
-      ],
-      "../src/restaurants/dtos/updat-restaurant.dto.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../src/restaurants/dtos/create-restaurant.dto.ts"
       ],
       "../src/restaurants/entities/category.entity.ts": [
         "../src/common/entities/core.entity.ts",
@@ -16251,14 +16243,14 @@
       "../src/restaurants/restaurant.service.ts": [
         "../node_modules/typeorm/index.d.ts",
         "../src/restaurants/dtos/create-restaurant.dto.ts",
-        "../src/restaurants/dtos/updat-restaurant.dto.ts",
-        "../src/restaurants/entities/restaurant.entity.ts"
+        "../src/restaurants/entities/category.entity.ts",
+        "../src/restaurants/entities/restaurant.entity.ts",
+        "../src/users/entities/user.entity.ts"
       ],
       "../src/restaurants/restaurants.resolver.ts": [
         "../src/restaurants/dtos/create-restaurant.dto.ts",
-        "../src/restaurants/dtos/updat-restaurant.dto.ts",
-        "../src/restaurants/entities/restaurant.entity.ts",
-        "../src/restaurants/restaurant.service.ts"
+        "../src/restaurants/restaurant.service.ts",
+        "../src/users/entities/user.entity.ts"
       ],
       "../src/users/dtos/create-account.dto.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -17556,7 +17548,6 @@
       "../src/mail/mail.service.ts",
       "../src/main.ts",
       "../src/restaurants/dtos/create-restaurant.dto.ts",
-      "../src/restaurants/dtos/updat-restaurant.dto.ts",
       "../src/restaurants/entities/category.entity.ts",
       "../src/restaurants/entities/restaurant.entity.ts",
       "../src/restaurants/restaurant.service.ts",
