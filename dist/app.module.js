@@ -21,6 +21,7 @@ const user_entity_1 = require("./users/entities/user.entity");
 const verification_entity_1 = require("./users/entities/verification.entity");
 const restaurant_entity_1 = require("./restaurants/entities/restaurant.entity");
 const category_entity_1 = require("./restaurants/entities/category.entity");
+const auth_module_1 = require("./auth/auth.module");
 let AppModule = class AppModule {
     configure(consumer) {
         consumer.apply(jwt_middleware_1.JwtMiddleware).forRoutes({
@@ -66,8 +67,6 @@ AppModule = __decorate([
                 autoSchemaFile: true,
                 context: ({ req }) => ({ user: req['user'] }),
             }),
-            restaurants_module_1.RestaurantsModule,
-            users_module_1.UsersModule,
             jwt_module_1.JwtModule.forRoot({
                 privateKey: process.env.PRIVATE_KEY,
             }),
@@ -76,6 +75,9 @@ AppModule = __decorate([
                 domain: process.env.MAILGUN_DOMAIN_NAME,
                 fromEmail: process.env.MAILGUN_FROM_EMAIL,
             }),
+            auth_module_1.AuthModule,
+            restaurants_module_1.RestaurantsModule,
+            users_module_1.UsersModule,
         ],
         controllers: [],
         providers: [],
