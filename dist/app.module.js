@@ -15,7 +15,6 @@ const typeorm_1 = require("@nestjs/typeorm");
 const restaurants_module_1 = require("./restaurants/restaurants.module");
 const users_module_1 = require("./users/users.module");
 const jwt_module_1 = require("./jwt/jwt.module");
-const jwt_middleware_1 = require("./jwt/jwt.middleware");
 const mail_module_1 = require("./mail/mail.module");
 const user_entity_1 = require("./users/entities/user.entity");
 const verification_entity_1 = require("./users/entities/verification.entity");
@@ -27,12 +26,6 @@ const orders_module_1 = require("./orders/orders.module");
 const order_entity_1 = require("./orders/entities/order.entity");
 const order_item_entity_1 = require("./orders/entities/order-item.entity");
 let AppModule = class AppModule {
-    configure(consumer) {
-        consumer.apply(jwt_middleware_1.JwtMiddleware).forRoutes({
-            path: '/graphql',
-            method: common_1.RequestMethod.POST,
-        });
-    }
 };
 AppModule = __decorate([
     common_1.Module({
@@ -79,12 +72,13 @@ AppModule = __decorate([
                 installSubscriptionHandlers: true,
                 autoSchemaFile: true,
                 context: ({ req, connection }) => {
-                    if (req) {
-                        return { user: req['user'] };
-                    }
-                    else {
-                        console.log(connection);
-                    }
+                    const TOKEN_KEY_REQ = 'x-jwt';
+                    const TOKEN_KEY_CON = 'X-JWT';
+                    return {
+                        token: req
+                            ? req.headers[TOKEN_KEY_REQ]
+                            : connection.context[TOKEN_KEY_CON],
+                    };
                 },
             }),
             jwt_module_1.JwtModule.forRoot({

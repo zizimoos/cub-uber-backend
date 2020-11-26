@@ -6026,7 +6026,7 @@
         "affectsGlobalScope": false
       },
       "../src/jwt/jwt.middleware.ts": {
-        "version": "fe0f0c2773a804110920ebd8d3e27d8b72edbdbce8643c66e6bcf0e0711dfba6",
+        "version": "20f0f4e2fcd105f113937a59ebd7c48c3db7579b04f4ea744646f90880e38e78",
         "signature": "c7828a75920e7e3593aa9797f82efa24c7d876955cd16426c2a19fc16f17c597",
         "affectsGlobalScope": false
       },
@@ -6036,12 +6036,12 @@
         "affectsGlobalScope": false
       },
       "../src/auth/auth.guard.ts": {
-        "version": "636160cb32a04a172aad3c3eb6eef7f3c5b4eafbf08bd26f2571397bd4bb7a06",
-        "signature": "203b02b7dd181d230245f2e10171c709478b66c4bd82d47123c1683f6a433576",
+        "version": "96a50fe2a09334799652ab26df4599d7f38b9ef5b673d85127d64d81246e4c39",
+        "signature": "ebcd870144677782bf8744062c042bf5e8b922dadce1cdc6e56b71d07c7b0dd7",
         "affectsGlobalScope": false
       },
       "../src/auth/auth.module.ts": {
-        "version": "f78e812357f6307cb06e92e52af8941610bedb7d9acea63fae633756c447df7e",
+        "version": "14972239caefec1c2f8f1ca81e28299f4ac9a81a1d3eebd581b2a4564d54970b",
         "signature": "a28b5c0c372fb375910b3fe3c3ce4331509bc18ccef7cc39c9ee9d8daf8225d1",
         "affectsGlobalScope": false
       },
@@ -6091,8 +6091,8 @@
         "affectsGlobalScope": false
       },
       "../src/orders/orders.resolver.ts": {
-        "version": "01c095b0d561838976a2f657d9014c13fc88406016e5b46b3554fdd4e4ba3b17",
-        "signature": "1d347209405b1bc49dda8aca66c3bfd72e478e4c10b8c5808c4187073934da24",
+        "version": "60f2bed246df61ac184f8d4f55de4c2b604acc4951c2ccd9ca722859a1e4bd2b",
+        "signature": "a8707ec6a7375e06c7912a48be44298773579f1c032a687fb944ea47e0ae97f5",
         "affectsGlobalScope": false
       },
       "../src/orders/orders.module.ts": {
@@ -6101,8 +6101,8 @@
         "affectsGlobalScope": false
       },
       "../src/app.module.ts": {
-        "version": "6f16494819d3c4adf53f47b69e3d5b19b879f315145a7de6324c8ca2f8cba46c",
-        "signature": "9e55d69c2879e4c1f6039d177c0daf79a72435ac51ec7d4f46fc72e8b0c503d6",
+        "version": "c07ce00936900ac2b3591d4d5871c95ce29b0a889e55200d7f20e75c5afc245c",
+        "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
@@ -11327,12 +11327,14 @@
         "../node_modules/@nestjs/core/index.d.ts",
         "../node_modules/@nestjs/graphql/index.d.ts",
         "../src/auth/role.decorator.ts",
-        "../src/users/entities/user.entity.ts"
+        "../src/jwt/jwt.service.ts",
+        "../src/users/users.service.ts"
       ],
       "../src/auth/auth.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/core/index.d.ts",
-        "../src/auth/auth.guard.ts"
+        "../src/auth/auth.guard.ts",
+        "../src/users/users.module.ts"
       ],
       "../src/auth/role.decorator.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -16532,12 +16534,11 @@
       "../node_modules/zen-observable-ts/lib/zenobservable.d.ts": [
         "../node_modules/zen-observable-ts/lib/types.d.ts"
       ],
-      "../src/app.module.ts": [
-        "../node_modules/@nestjs/common/index.d.ts"
-      ],
       "../src/auth/auth.guard.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@nestjs/core/index.d.ts"
+        "../node_modules/@nestjs/core/index.d.ts",
+        "../src/jwt/jwt.service.ts",
+        "../src/users/users.service.ts"
       ],
       "../src/auth/role.decorator.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
