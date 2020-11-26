@@ -6045,6 +6045,26 @@
         "signature": "a28b5c0c372fb375910b3fe3c3ce4331509bc18ccef7cc39c9ee9d8daf8225d1",
         "affectsGlobalScope": false
       },
+      "../node_modules/graphql-subscriptions/dist/pubsub-engine.d.ts": {
+        "version": "4c9aded23c1eb21c4d7a4b03edb29e0611ee88975520a4aa8514186bb22cf20c",
+        "signature": "4c9aded23c1eb21c4d7a4b03edb29e0611ee88975520a4aa8514186bb22cf20c",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/graphql-subscriptions/dist/pubsub.d.ts": {
+        "version": "4fdc7a5345d94cbdc99db32d6385bd27bc6a74fdd7971fdc6cfe8af2b75230ba",
+        "signature": "4fdc7a5345d94cbdc99db32d6385bd27bc6a74fdd7971fdc6cfe8af2b75230ba",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/graphql-subscriptions/dist/with-filter.d.ts": {
+        "version": "1c8b9ca66d0512c05dc940b1791d4c7dd57f531cc6ed344851076cc6ce67b247",
+        "signature": "1c8b9ca66d0512c05dc940b1791d4c7dd57f531cc6ed344851076cc6ce67b247",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/graphql-subscriptions/dist/index.d.ts": {
+        "version": "bbf290c3ac5379006edacffacd15be4e288cd6d720625d3bc51b3f937b808d79",
+        "signature": "bbf290c3ac5379006edacffacd15be4e288cd6d720625d3bc51b3f937b808d79",
+        "affectsGlobalScope": false
+      },
       "../src/orders/dtos/create-order.dto.ts": {
         "version": "8e3c78cecec5d018093fe629dfea1f4d102cb2597ee745a41275be49b3c62f81",
         "signature": "56539c2e3c3aabcfb33f8e23bb49bf818bd6233a98850dacff0d9d2705f9f30e",
@@ -6066,13 +6086,13 @@
         "affectsGlobalScope": false
       },
       "../src/orders/orders.service.ts": {
-        "version": "02e9457c70d13820129c986dc495f6c841e1190376b438c54370695fd89cc741",
+        "version": "a80178183d85f1e06d679a69f8388964d607760cdaa509c6c77491f4f8c9f086",
         "signature": "d3713fb09c74a7e1ed3855450738d974fab5dbfaa5ece1a9f3c94bd8e89adbe2",
         "affectsGlobalScope": false
       },
       "../src/orders/orders.resolver.ts": {
-        "version": "b099c0919926612269b2ade01ead65339414c9d8ec84ba94afd995c8236f12cb",
-        "signature": "803fc36febae46d7d56e0554962806faa6bf28b03b0161fba9ba82b3511cb7d6",
+        "version": "01c095b0d561838976a2f657d9014c13fc88406016e5b46b3554fdd4e4ba3b17",
+        "signature": "1d347209405b1bc49dda8aca66c3bfd72e478e4c10b8c5808c4187073934da24",
         "affectsGlobalScope": false
       },
       "../src/orders/orders.module.ts": {
@@ -6081,7 +6101,7 @@
         "affectsGlobalScope": false
       },
       "../src/app.module.ts": {
-        "version": "63e2d08c5c3f284a9337010d1608dc6a5327d3139ae5e4915b000bfe4db01763",
+        "version": "8afcb462f48f94a09b02a70705b3a51c66866b6dc5d18239d0383408fb23bec3",
         "signature": "9e55d69c2879e4c1f6039d177c0daf79a72435ac51ec7d4f46fc72e8b0c503d6",
         "affectsGlobalScope": false
       },
@@ -9360,6 +9380,16 @@
         "../node_modules/apollo-server-env/dist/index.d.ts",
         "../node_modules/graphql/index.d.ts"
       ],
+      "../node_modules/graphql-subscriptions/dist/index.d.ts": [
+        "../node_modules/graphql-subscriptions/dist/pubsub-engine.d.ts",
+        "../node_modules/graphql-subscriptions/dist/pubsub.d.ts",
+        "../node_modules/graphql-subscriptions/dist/with-filter.d.ts"
+      ],
+      "../node_modules/graphql-subscriptions/dist/pubsub.d.ts": [
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/index.d.ts",
+        "../node_modules/graphql-subscriptions/dist/pubsub-engine.d.ts"
+      ],
       "../node_modules/graphql/error/formaterror.d.ts": [
         "../node_modules/graphql/error/graphqlerror.d.ts",
         "../node_modules/graphql/language/location.d.ts"
@@ -11405,6 +11435,7 @@
       ],
       "../src/orders/orders.resolver.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/graphql-subscriptions/dist/index.d.ts",
         "../src/auth/auth-user.decorator.ts",
         "../src/auth/role.decorator.ts",
         "../src/orders/dtos/create-order.dto.ts",
@@ -14584,6 +14615,16 @@
         "../node_modules/apollo-server-env/dist/index.d.ts",
         "../node_modules/graphql/index.d.ts"
       ],
+      "../node_modules/graphql-subscriptions/dist/index.d.ts": [
+        "../node_modules/graphql-subscriptions/dist/pubsub-engine.d.ts",
+        "../node_modules/graphql-subscriptions/dist/pubsub.d.ts",
+        "../node_modules/graphql-subscriptions/dist/with-filter.d.ts"
+      ],
+      "../node_modules/graphql-subscriptions/dist/pubsub.d.ts": [
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/index.d.ts",
+        "../node_modules/graphql-subscriptions/dist/pubsub-engine.d.ts"
+      ],
       "../node_modules/graphql/error/formaterror.d.ts": [
         "../node_modules/graphql/error/graphqlerror.d.ts",
         "../node_modules/graphql/language/location.d.ts"
@@ -17479,6 +17520,10 @@
       "../node_modules/got/dist/source/types.d.ts",
       "../node_modules/graphql-extensions/dist/index.d.ts",
       "../node_modules/graphql-extensions/node_modules/apollo-server-types/dist/index.d.ts",
+      "../node_modules/graphql-subscriptions/dist/index.d.ts",
+      "../node_modules/graphql-subscriptions/dist/pubsub-engine.d.ts",
+      "../node_modules/graphql-subscriptions/dist/pubsub.d.ts",
+      "../node_modules/graphql-subscriptions/dist/with-filter.d.ts",
       "../node_modules/graphql/error/formaterror.d.ts",
       "../node_modules/graphql/error/graphqlerror.d.ts",
       "../node_modules/graphql/error/index.d.ts",

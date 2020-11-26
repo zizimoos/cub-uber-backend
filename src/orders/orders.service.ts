@@ -23,6 +23,7 @@ export class OrdersService {
     @InjectRepository(Dish)
     private readonly dishes: Repository<Dish>,
   ) {}
+
   async createOrder(
     customer: User,
     { restaurantId, items }: CreateOrderInput,
@@ -188,7 +189,11 @@ export class OrdersService {
     { id: orderId, status }: EditOrderInput,
   ): Promise<EditOrderOutput> {
     try {
-      const order = await this.orders.findOne(orderId);
+      console.log(user.role, UserRole.Owner);
+      const order = await this.orders.findOne(orderId, {
+        relations: ['restaurant'],
+      });
+
       if (!order) {
         return {
           ok: false,
@@ -201,13 +206,15 @@ export class OrdersService {
           error: 'Can not see this',
         };
       }
+
       let canEdit = true;
       if (user.role === UserRole.Client) {
         canEdit = false;
       }
+
       if (user.role === UserRole.Owner) {
         if (status !== OrderStatus.Cooking && status !== OrderStatus.Cooked) {
-          canEdit = false;
+          canEdit = true;
         }
       }
       if (user.role === UserRole.Delivery) {

@@ -76,8 +76,12 @@ AppModule = __decorate([
                 ],
             }),
             graphql_1.GraphQLModule.forRoot({
+                installSubscriptionHandlers: true,
                 autoSchemaFile: true,
-                context: ({ req }) => ({ user: req['user'] }),
+                context: ({ req }) => {
+                    console.log(req);
+                    return { user: req['user'] };
+                },
             }),
             jwt_module_1.JwtModule.forRoot({
                 privateKey: process.env.PRIVATE_KEY,
