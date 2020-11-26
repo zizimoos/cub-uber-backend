@@ -6101,7 +6101,7 @@
         "affectsGlobalScope": false
       },
       "../src/app.module.ts": {
-        "version": "8afcb462f48f94a09b02a70705b3a51c66866b6dc5d18239d0383408fb23bec3",
+        "version": "6f16494819d3c4adf53f47b69e3d5b19b879f315145a7de6324c8ca2f8cba46c",
         "signature": "9e55d69c2879e4c1f6039d177c0daf79a72435ac51ec7d4f46fc72e8b0c503d6",
         "affectsGlobalScope": false
       },
