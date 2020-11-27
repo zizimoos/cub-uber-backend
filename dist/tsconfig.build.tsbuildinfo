@@ -5896,8 +5896,8 @@
         "affectsGlobalScope": false
       },
       "../src/common/common.constants.ts": {
-        "version": "28cb43f2649229b10e492a12b44777e2ef20508882809f30581235c7564c5d3a",
-        "signature": "9a31535491a009d0ddf3461aac7e698f6a9134578cc05bb3a8f162bb370ba5e5",
+        "version": "94ad9685d374324532dc20d3f0968bb8a103127e6829e1188e585a0d296f5bc0",
+        "signature": "ce65238e975109af63cd4a778af3235470b37c1df300cc74fd315c0f19e8a144",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/jsonwebtoken/index.d.ts": {
@@ -6086,13 +6086,13 @@
         "affectsGlobalScope": false
       },
       "../src/orders/orders.service.ts": {
-        "version": "a80178183d85f1e06d679a69f8388964d607760cdaa509c6c77491f4f8c9f086",
-        "signature": "d3713fb09c74a7e1ed3855450738d974fab5dbfaa5ece1a9f3c94bd8e89adbe2",
+        "version": "d0fc1a578565de691e38cd507922111609be06c1e7eb0a26840dce2e773e41c0",
+        "signature": "cb5f51ccc1f5cd85758638da5f8303658bb614efa03ef6551ab8c89c09d58e59",
         "affectsGlobalScope": false
       },
       "../src/orders/orders.resolver.ts": {
-        "version": "174039fc83efb2190b0cd3181b5c7cfffa4c5e0bbc2e132efe8f64bd29f1ca20",
-        "signature": "0d0be1cbcccc96857c3b7080cf68d786444858efab99f1d32fdc463083049d8c",
+        "version": "26c74f3bf458cad2c53fbdc1fa8f8ba513f77590e6ff3e650bb49c89fb90f803",
+        "signature": "1d522359e68a5208207b904489c6196bca11dba023cc4c824994f25e4c7ae9ab",
         "affectsGlobalScope": false
       },
       "../src/orders/orders.module.ts": {
@@ -11456,7 +11456,9 @@
       "../src/orders/orders.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/graphql-subscriptions/dist/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
+        "../src/common/common.constants.ts",
         "../src/orders/dtos/create-order.dto.ts",
         "../src/orders/dtos/edit-order.dto.ts",
         "../src/orders/dtos/get-order.dto.ts",
@@ -16610,6 +16612,7 @@
         "../src/users/entities/user.entity.ts"
       ],
       "../src/orders/orders.service.ts": [
+        "../node_modules/graphql-subscriptions/dist/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
         "../src/orders/dtos/create-order.dto.ts",
         "../src/orders/dtos/edit-order.dto.ts",
