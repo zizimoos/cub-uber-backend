@@ -6090,14 +6090,19 @@
         "signature": "eb16de991111be05a58d12e27744a73bfb59f18b1a9cc79eb8b1d6eeb12083a0",
         "affectsGlobalScope": false
       },
+      "../src/orders/dtos/take-order.dto.ts": {
+        "version": "abb9d9f78a909259190285643b9187d22b338f82074a37ad7a21f0c4dec5ee08",
+        "signature": "61ad1530e0c4eeb27aa4aec0a62acc0238589299033ece59bad5b5cbe9e4f063",
+        "affectsGlobalScope": false
+      },
       "../src/orders/orders.service.ts": {
-        "version": "7c7ba27e063c92976c0cf252a7d5faab3870a67709a61ca5b1b1051140e67960",
-        "signature": "cb5f51ccc1f5cd85758638da5f8303658bb614efa03ef6551ab8c89c09d58e59",
+        "version": "411f73e81093a172f4050719052b81ca610f5752eecf3578f664a5a6d945b480",
+        "signature": "aa1124829e2d19ca69f8709f45fb6f9cd70b3c192f19642080e50ea0c61cf256",
         "affectsGlobalScope": false
       },
       "../src/orders/orders.resolver.ts": {
-        "version": "dd58642f26530ee4cfa158918df366be47b9bceeb2534a238d81a5234b3c98bd",
-        "signature": "538ad7e175f15933f7b3f8ced267a830bea9c8d64a6d046905181790dd45d708",
+        "version": "8f4439e6a3c5d908723638d7dec22cfdf21f6d4d690b4a83ebe2c1b541b3a79a",
+        "signature": "90d92c9b850769b989822cd49793818a1aa986d20807011214f4681a04f9aad7",
         "affectsGlobalScope": false
       },
       "../src/orders/orders.module.ts": {
@@ -11422,6 +11427,11 @@
         "../node_modules/@nestjs/graphql/index.d.ts",
         "../src/orders/entities/order.entity.ts"
       ],
+      "../src/orders/dtos/take-order.dto.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../src/common/dtos/output.dto.ts",
+        "../src/orders/entities/order.entity.ts"
+      ],
       "../src/orders/entities/order-item.entity.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
@@ -11459,6 +11469,7 @@
         "../src/orders/dtos/get-order.dto.ts",
         "../src/orders/dtos/get-orders.dto.ts",
         "../src/orders/dtos/order-updates.dto.ts",
+        "../src/orders/dtos/take-order.dto.ts",
         "../src/orders/entities/order.entity.ts",
         "../src/orders/orders.service.ts",
         "../src/users/entities/user.entity.ts"
@@ -11473,6 +11484,7 @@
         "../src/orders/dtos/edit-order.dto.ts",
         "../src/orders/dtos/get-order.dto.ts",
         "../src/orders/dtos/get-orders.dto.ts",
+        "../src/orders/dtos/take-order.dto.ts",
         "../src/orders/entities/order-item.entity.ts",
         "../src/orders/entities/order.entity.ts",
         "../src/restaurants/entities/dish.entity.ts",
@@ -16606,6 +16618,11 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/orders/entities/order.entity.ts"
       ],
+      "../src/orders/dtos/take-order.dto.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/common/dtos/output.dto.ts",
+        "../src/orders/entities/order.entity.ts"
+      ],
       "../src/orders/entities/order-item.entity.ts": [
         "../src/common/entities/core.entity.ts",
         "../src/restaurants/entities/dish.entity.ts"
@@ -16623,6 +16640,7 @@
         "../src/orders/dtos/get-order.dto.ts",
         "../src/orders/dtos/get-orders.dto.ts",
         "../src/orders/dtos/order-updates.dto.ts",
+        "../src/orders/dtos/take-order.dto.ts",
         "../src/orders/orders.service.ts",
         "../src/users/entities/user.entity.ts"
       ],
@@ -16633,6 +16651,7 @@
         "../src/orders/dtos/edit-order.dto.ts",
         "../src/orders/dtos/get-order.dto.ts",
         "../src/orders/dtos/get-orders.dto.ts",
+        "../src/orders/dtos/take-order.dto.ts",
         "../src/orders/entities/order-item.entity.ts",
         "../src/orders/entities/order.entity.ts",
         "../src/restaurants/entities/dish.entity.ts",
@@ -18046,6 +18065,7 @@
       "../src/orders/dtos/get-order.dto.ts",
       "../src/orders/dtos/get-orders.dto.ts",
       "../src/orders/dtos/order-updates.dto.ts",
+      "../src/orders/dtos/take-order.dto.ts",
       "../src/orders/entities/order-item.entity.ts",
       "../src/orders/entities/order.entity.ts",
       "../src/orders/orders.module.ts",
