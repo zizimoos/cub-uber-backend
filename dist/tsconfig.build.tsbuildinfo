@@ -5746,7 +5746,7 @@
         "affectsGlobalScope": false
       },
       "../src/orders/entities/order.entity.ts": {
-        "version": "632b9f0d5abe7e62e3e5f2d62b793376db16918bc8d815539dd534edf49116da",
+        "version": "170d76548cc5eb91aff3b0c20f5881e8e46886499cfe3fb0ead8c753e4c9b279",
         "signature": "7028305b2f1a8ee37e2a9b5966c9e61b16598af2f421e499ea8e0b217509c692",
         "affectsGlobalScope": false
       },
@@ -5896,8 +5896,8 @@
         "affectsGlobalScope": false
       },
       "../src/common/common.constants.ts": {
-        "version": "94ad9685d374324532dc20d3f0968bb8a103127e6829e1188e585a0d296f5bc0",
-        "signature": "ce65238e975109af63cd4a778af3235470b37c1df300cc74fd315c0f19e8a144",
+        "version": "62f11cf9273e7fb2f638d7a12cfa53e95f968a8bcd5fe4ebbf3627d9e5c0b557",
+        "signature": "66f87d72678dad77c88a062523bc965d41b5b4857afa475aac79925fcac9daaf",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/jsonwebtoken/index.d.ts": {
@@ -6085,14 +6085,19 @@
         "signature": "e4bd4d8d37bbd3e4bc97e072ee4e3973bb5606e2d0faee51bf2c206df2e7edd2",
         "affectsGlobalScope": false
       },
+      "../src/orders/dtos/order-updates.dto.ts": {
+        "version": "324b9955e3dffdb42e9edad727d0e5d07b05dc7ad91ad11df3de67ae1485abf0",
+        "signature": "eb16de991111be05a58d12e27744a73bfb59f18b1a9cc79eb8b1d6eeb12083a0",
+        "affectsGlobalScope": false
+      },
       "../src/orders/orders.service.ts": {
-        "version": "d0fc1a578565de691e38cd507922111609be06c1e7eb0a26840dce2e773e41c0",
+        "version": "7c7ba27e063c92976c0cf252a7d5faab3870a67709a61ca5b1b1051140e67960",
         "signature": "cb5f51ccc1f5cd85758638da5f8303658bb614efa03ef6551ab8c89c09d58e59",
         "affectsGlobalScope": false
       },
       "../src/orders/orders.resolver.ts": {
-        "version": "26c74f3bf458cad2c53fbdc1fa8f8ba513f77590e6ff3e650bb49c89fb90f803",
-        "signature": "1d522359e68a5208207b904489c6196bca11dba023cc4c824994f25e4c7ae9ab",
+        "version": "dd58642f26530ee4cfa158918df366be47b9bceeb2534a238d81a5234b3c98bd",
+        "signature": "538ad7e175f15933f7b3f8ced267a830bea9c8d64a6d046905181790dd45d708",
         "affectsGlobalScope": false
       },
       "../src/orders/orders.module.ts": {
@@ -11413,6 +11418,10 @@
         "../src/common/dtos/output.dto.ts",
         "../src/orders/entities/order.entity.ts"
       ],
+      "../src/orders/dtos/order-updates.dto.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../src/orders/entities/order.entity.ts"
+      ],
       "../src/orders/entities/order-item.entity.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
@@ -11449,6 +11458,7 @@
         "../src/orders/dtos/edit-order.dto.ts",
         "../src/orders/dtos/get-order.dto.ts",
         "../src/orders/dtos/get-orders.dto.ts",
+        "../src/orders/dtos/order-updates.dto.ts",
         "../src/orders/entities/order.entity.ts",
         "../src/orders/orders.service.ts",
         "../src/users/entities/user.entity.ts"
@@ -16592,6 +16602,10 @@
         "../src/common/dtos/output.dto.ts",
         "../src/orders/entities/order.entity.ts"
       ],
+      "../src/orders/dtos/order-updates.dto.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/orders/entities/order.entity.ts"
+      ],
       "../src/orders/entities/order-item.entity.ts": [
         "../src/common/entities/core.entity.ts",
         "../src/restaurants/entities/dish.entity.ts"
@@ -16608,6 +16622,7 @@
         "../src/orders/dtos/edit-order.dto.ts",
         "../src/orders/dtos/get-order.dto.ts",
         "../src/orders/dtos/get-orders.dto.ts",
+        "../src/orders/dtos/order-updates.dto.ts",
         "../src/orders/orders.service.ts",
         "../src/users/entities/user.entity.ts"
       ],
@@ -18030,6 +18045,7 @@
       "../src/orders/dtos/edit-order.dto.ts",
       "../src/orders/dtos/get-order.dto.ts",
       "../src/orders/dtos/get-orders.dto.ts",
+      "../src/orders/dtos/order-updates.dto.ts",
       "../src/orders/entities/order-item.entity.ts",
       "../src/orders/entities/order.entity.ts",
       "../src/orders/orders.module.ts",
