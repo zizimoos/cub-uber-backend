@@ -6091,8 +6091,8 @@
         "affectsGlobalScope": false
       },
       "../src/orders/orders.resolver.ts": {
-        "version": "bf84f7e59595467b01776b7039cf87f0477e4268dfc623d1a633d4689e042a03",
-        "signature": "410f75e4b4baa1d97c51a88b2d83dd1f4faf473b251159ff6af0a52f8ab9ed0d",
+        "version": "174039fc83efb2190b0cd3181b5c7cfffa4c5e0bbc2e132efe8f64bd29f1ca20",
+        "signature": "0d0be1cbcccc96857c3b7080cf68d786444858efab99f1d32fdc463083049d8c",
         "affectsGlobalScope": false
       },
       "../src/orders/orders.module.ts": {
