@@ -26,6 +26,9 @@ const orders_module_1 = require("./orders/orders.module");
 const order_entity_1 = require("./orders/entities/order.entity");
 const order_item_entity_1 = require("./orders/entities/order-item.entity");
 const common_module_1 = require("./common/common.module");
+const payments_module_1 = require("./payments/payments.module");
+const payment_entity_1 = require("./payments/entities/payment.entity");
+const schedule_1 = require("@nestjs/schedule");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -67,6 +70,7 @@ AppModule = __decorate([
                     dish_entity_1.Dish,
                     order_entity_1.Order,
                     order_item_entity_1.OrderItem,
+                    payment_entity_1.Payment,
                 ],
             }),
             graphql_1.GraphQLModule.forRoot({
@@ -82,6 +86,7 @@ AppModule = __decorate([
                     };
                 },
             }),
+            schedule_1.ScheduleModule.forRoot(),
             jwt_module_1.JwtModule.forRoot({
                 privateKey: process.env.PRIVATE_KEY,
             }),
@@ -95,6 +100,7 @@ AppModule = __decorate([
             users_module_1.UsersModule,
             orders_module_1.OrdersModule,
             common_module_1.CommonModule,
+            payments_module_1.PaymentsModule,
         ],
         controllers: [],
         providers: [],

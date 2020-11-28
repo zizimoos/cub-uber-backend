@@ -78,7 +78,7 @@ export class RestaurnatResolver {
   }
 
   @Query(() => RestaurantsOutput)
-  restaurnats(
+  restaurants(
     @Args('input') restaurantsInput: RestaurantsInput,
   ): Promise<RestaurantsOutput> {
     return this.restaurantService.allRestaurants(restaurantsInput);
