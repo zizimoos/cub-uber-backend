@@ -120,4 +120,4 @@ dist
 .pnp.*
 package-lock.json
 
-dist
+dist/
