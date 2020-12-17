@@ -5841,7 +5841,7 @@
         "affectsGlobalScope": false
       },
       "../src/restaurants/restaurant.service.ts": {
-        "version": "38f7fc47fad1673d7920b39130445ef96f9854401a3fd3ee95ce03b0ac52ffda",
+        "version": "f94ccb488976bc3c726827b8043b8f991b6fafe8bc5d500fd6fa88242bdfe066",
         "signature": "6dc8f16e3abcb152a0fc4f9a004986f250221c49bb7a6306d27bc7ed8df57c46",
         "affectsGlobalScope": false
       },
