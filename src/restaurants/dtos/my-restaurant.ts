@@ -7,6 +7,6 @@ export class MyRestaurantInput extends PickType(Restaurant, ['id']) {}
 
 @ObjectType()
 export class MyRestaurantOutput extends CoreOutput {
-  @Field(type => Restaurant, { nullable: true })
+  @Field(() => Restaurant, { nullable: true })
   restaurant?: Restaurant;
 }
