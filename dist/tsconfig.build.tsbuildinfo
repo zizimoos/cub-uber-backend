@@ -5801,8 +5801,8 @@
         "affectsGlobalScope": false
       },
       "../src/restaurants/dtos/create-restaurant.dto.ts": {
-        "version": "3e22842db7a144f36b8a3762c5198d1e9098856781782ef177253161ada2000d",
-        "signature": "aa6119d1471a9b0b66da71cdd61f9b1808d81e2d2a8efe71c02d5c717622996a",
+        "version": "7c2cfdc76536e870fdf1fc2ff958b2993867ea696b49ff15624c3fb32453b955",
+        "signature": "4e987d885bfe2b34edbbbd4ea742d89f822d9e0b79057c232fe395c29eea5c85",
         "affectsGlobalScope": false
       },
       "../src/restaurants/dtos/delete-dish.dto.ts": {
@@ -5851,7 +5851,7 @@
         "affectsGlobalScope": false
       },
       "../src/restaurants/restaurant.service.ts": {
-        "version": "598cbfe93055e10e138d6279f2c0b1ce57694e1b10c485e57645f6b606629543",
+        "version": "018f58d782eae15f7d0845140aa92fc5e6df69f9aae3b1dee1fbda173465c902",
         "signature": "93fb1056cc8916ad4c15acbf0a6463439b7f032b57b521a4846a3d0da6ddf26f",
         "affectsGlobalScope": false
       },

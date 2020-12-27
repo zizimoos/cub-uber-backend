@@ -56,6 +56,7 @@ export class RestaurantService {
       await this.restaurants.save(newRestaurant);
       return {
         ok: true,
+        restaurantId: newRestaurant.id,
       };
     } catch (e) {
       return {
@@ -389,6 +390,7 @@ export class RestaurantService {
         { owner, id },
         { relations: ['menu', 'orders'] },
       );
+      console.log(restaurant);
       return {
         restaurant,
         ok: true,
