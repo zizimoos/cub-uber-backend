@@ -6076,8 +6076,8 @@
         "affectsGlobalScope": false
       },
       "../src/orders/dtos/create-order.dto.ts": {
-        "version": "8e3c78cecec5d018093fe629dfea1f4d102cb2597ee745a41275be49b3c62f81",
-        "signature": "56539c2e3c3aabcfb33f8e23bb49bf818bd6233a98850dacff0d9d2705f9f30e",
+        "version": "7829ae5e84607dcf1cc2c8495312101e83cb1fb1c91d0ad44dd3e2f08479eef3",
+        "signature": "2a0af02d6812dbe9e35b11e77d4be430cde62fadd4e519b90ef8dc24df4bdb34",
         "affectsGlobalScope": false
       },
       "../src/orders/dtos/edit-order.dto.ts": {
@@ -6106,7 +6106,7 @@
         "affectsGlobalScope": false
       },
       "../src/orders/orders.service.ts": {
-        "version": "411f73e81093a172f4050719052b81ca610f5752eecf3578f664a5a6d945b480",
+        "version": "96d503e3127ed329967dc1f1a92bf8ae4a96c93c77b986c060403536b1c52bb8",
         "signature": "aa1124829e2d19ca69f8709f45fb6f9cd70b3c192f19642080e50ea0c61cf256",
         "affectsGlobalScope": false
       },
