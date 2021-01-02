@@ -52,6 +52,8 @@ AppModule = __decorate([
                     MAILGUN_API_KEY: Joi.string().required(),
                     MAILGUN_DOMAIN_NAME: Joi.string().required(),
                     MAILGUN_FROM_EMAIL: Joi.string().required(),
+                    AMA_ACCESS_ID: Joi.string().required(),
+                    AMA_SECRET_KEY: Joi.string().required(),
                 }),
             }),
             typeorm_1.TypeOrmModule.forRoot({

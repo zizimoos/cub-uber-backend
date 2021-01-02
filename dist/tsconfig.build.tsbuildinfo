@@ -6195,8 +6195,13 @@
         "signature": "ea914b5eb6a7fedb3652345f9861263e9415e9414302f77beb57c2ecfaf5c8ae",
         "affectsGlobalScope": false
       },
+      "../src/payments/payments.controller.ts": {
+        "version": "baab6f494138f6f0e7a32ba2b93a9e4924a706f460c84f5c15a9cfd8693627f1",
+        "signature": "82949ba84455ac0d095976dee0778ede54af16ae9c7edaa20d9427a98c5a7220",
+        "affectsGlobalScope": false
+      },
       "../src/payments/payments.module.ts": {
-        "version": "2e84b379a899db18b2ef734fee2fb8ec6bbc4c93dc8aa015efbdf27a997a302e",
+        "version": "6ea78584460c7c5da79a8e1c6e4aff7ebcb8309be95cd59e5bd03b09192a8728",
         "signature": "b0a844f50b549a626630dc8d318bfbe6e4eb22db570ff19a952c56bb782c6370",
         "affectsGlobalScope": false
       },
@@ -7801,7 +7806,7 @@
         "affectsGlobalScope": false
       },
       "../src/app.module.ts": {
-        "version": "d502c8e839f092029eb00025d14a646cacda5903cbd85e39dea0d19c9b0a4bf1",
+        "version": "2cdd5486d1f42abde6952f0a92b7f0078cefbdff76f2aad6c330dcaf89c2d61d",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -15548,10 +15553,14 @@
         "../src/restaurants/entities/restaurant.entity.ts",
         "../src/users/entities/user.entity.ts"
       ],
+      "../src/payments/payments.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts"
+      ],
       "../src/payments/payments.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/payments/entities/payment.entity.ts",
+        "../src/payments/payments.controller.ts",
         "../src/payments/payments.resolver.ts",
         "../src/payments/payments.service.ts",
         "../src/restaurants/entities/restaurant.entity.ts"
@@ -24899,6 +24908,7 @@
       "../src/payments/dtos/create-payment.dto.ts",
       "../src/payments/dtos/get-payments.dto.ts",
       "../src/payments/entities/payment.entity.ts",
+      "../src/payments/payments.controller.ts",
       "../src/payments/payments.module.ts",
       "../src/payments/payments.resolver.ts",
       "../src/payments/payments.service.ts",
