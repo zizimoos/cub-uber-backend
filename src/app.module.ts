@@ -70,12 +70,12 @@ import { UploadsModule } from './uploads/uploads.module';
       autoSchemaFile: true,
       context: ({ req, connection }) => {
         const TOKEN_KEY_REQ = 'x-jwt';
-        // const TOKEN_KEY_CON = 'X-JWT';
+        const TOKEN_KEY_CON = 'X-JWT';
         console.log(connection.context[TOKEN_KEY_REQ]);
         return {
           token: req
             ? req.headers[TOKEN_KEY_REQ]
-            : connection.context[TOKEN_KEY_REQ],
+            : connection.context[TOKEN_KEY_CON],
         };
       },
     }),
