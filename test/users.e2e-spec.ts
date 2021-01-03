@@ -29,7 +29,7 @@ describe('UserModule (e2e)', () => {
   const publicTest = (query: string) => baseTest().send({ query });
   const privateTest = (query: string) =>
     baseTest()
-      .set('X-JWT', jwtToken)
+      .set('x-jwt', jwtToken)
       .send({ query });
 
   beforeAll(async () => {
@@ -234,7 +234,7 @@ describe('UserModule (e2e)', () => {
     it('should not find a profile', () => {
       return request(app.getHttpServer())
         .post(GRAPHQL_ENDPOINT)
-        .set('X-JWT', jwtToken)
+        .set('x-jwt', jwtToken)
         .send({
           query: `
           {
@@ -268,7 +268,7 @@ describe('UserModule (e2e)', () => {
     it('should find my profile', () => {
       return request(app.getHttpServer())
         .post(GRAPHQL_ENDPOINT)
-        .set('X-JWT', jwtToken)
+        .set('x-jwt', jwtToken)
         .send({
           query: `
           {
@@ -318,7 +318,7 @@ describe('UserModule (e2e)', () => {
       const NEW_EMAIL = 'changed@changed.com';
       return request(app.getHttpServer())
         .post(GRAPHQL_ENDPOINT)
-        .set('X-JWT', jwtToken)
+        .set('x-jwt', jwtToken)
         .send({
           query: `
           mutation {
@@ -346,7 +346,7 @@ describe('UserModule (e2e)', () => {
         .then(() => {
           return request(app.getHttpServer())
             .post(GRAPHQL_ENDPOINT)
-            .set('X-JWT', jwtToken)
+            .set('x-jwt', jwtToken)
             .send({
               query: `
           {
@@ -372,7 +372,7 @@ describe('UserModule (e2e)', () => {
     it('should change password', () => {
       return request(app.getHttpServer())
         .post(GRAPHQL_ENDPOINT)
-        .set('X-JWT', jwtToken)
+        .set('x-jwt', jwtToken)
         .send({
           query: `
           mutation {
