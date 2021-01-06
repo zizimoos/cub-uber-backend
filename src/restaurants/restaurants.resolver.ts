@@ -27,7 +27,10 @@ import {
 
 import { Category } from './entities/category.entity';
 
-import { MyRestaurantInput, MyRestaurantOutput } from './dtos/my-restaurant';
+import {
+  MyRestaurantInput,
+  MyRestaurantOutput,
+} from './dtos/my-restaurant.dto';
 import { MyRestaurantsOutput } from './dtos/my-restaurants.dto';
 
 import { Restaurant } from './entities/restaurant.entity';
