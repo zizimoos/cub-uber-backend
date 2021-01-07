@@ -384,6 +384,7 @@ export class RestaurantService {
       };
     }
   }
+
   async myRestaurant(
     owner: User,
     { id }: MyRestaurantInput,
